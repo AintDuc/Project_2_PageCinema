@@ -151,7 +151,19 @@ li:hover .sub-menu {
 .slider-content p {
   color: #eee;
 }
+/* text-ellipsis */
+#text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#text-ellipsis:hover {
+  text-overflow: red;
+  overflow: initial;
+  white-space: initial;
+}
 
+/* ghế - seat */
 .seats {
   display: grid;
   grid-template-columns:
@@ -194,4 +206,18 @@ li:hover .sub-menu {
 /* footer */
 .light-shadow {
   box-shadow: 2px -4px 10px 6px #fff;
+}
+
+/* mobile responsive */
+/* width from 576px to 768px */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  #left {
+    max-width: unset;
+    width: 100%;
+  }
+  /* button booking seat */
+  #address .btn {
+    padding: 10px 3px;
+    font-size: 15px;
+  }
 }

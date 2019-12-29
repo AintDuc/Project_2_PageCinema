@@ -44,14 +44,14 @@ function toggleSelected(event) {
   seatID = $(event.target).attr("id-ghe");
   seatName = $(event.target).attr("name");
   seatPrice = $(event.target).attr("price");
-  total = total + Number(seatPrice);
+
   selected.push({
     id: seatID,
     name: seatName,
     price: seatPrice
   });
 
-  if ($(".seat").hasClass("selected")) {
+  if (event.target.classList.contains("selected")) {
     total = total + Number(seatPrice);
   } else {
     total = total - Number(seatPrice);
