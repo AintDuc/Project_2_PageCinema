@@ -163,26 +163,26 @@ li:hover .sub-menu {
   height: 15px;
   width: 15px;
   border-radius: 100%;
-  background-color: lawngreen;
+  background-color: greenyellow;
 }
 
 .empty {
   height: 15px;
   width: 15px;
   border-radius: 100%;
-  background-color: lawngreen;
+  background-color: greenyellow;
 }
 .booked {
   height: 15px;
   width: 15px;
   border-radius: 100%;
-  background-color: lawngreen;
+  background-color: rgb(243, 24, 24);
 }
 .selected {
   height: 15px;
   width: 15px;
   border-radius: 100%;
-  background-color: lawngreen;
+  background-color: purple;
 }
 /* right */
 /* sell ticket */

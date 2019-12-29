@@ -57,6 +57,7 @@
     <main>
       <div class="container">
         <div class="row">
+          <!-- left -->
           <div class="col-8" id="left">
             <div class="box">
               <article id="address">
@@ -180,108 +181,53 @@
                     </div>
                   </div>
                   <div class="seat-content d-flex justify-content-center p-3">
-                    <div class="seats">
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                      <div class="seat"></div>
-                    </div>
+                    <div class="seats"></div>
                   </div>
                   <div class="seat-footer p-3">
                     <hr class="bg-primary" />
                     <div
                       class="infor-seat d-flex justify-content-center align-items-center "
                     >
-                      <div class="empty"></div>
-                      <p>empty</p>
-                      <div class="booked"></div>
-                      <p>empty</p>
-                      <div class="selected"></div>
-                      <p>empty</p>
+                      <div
+                        class="box-infor p-3 mr-2 d-flex justify-content-center align-items-center"
+                      >
+                        <div class="empty mr-1"></div>
+                        <p class="m-0">Empty</p>
+                      </div>
+
+                      <div
+                        class="box-infor p-3 mr-2  d-flex justify-content-center align-items-center"
+                      >
+                        <div class="booked mr-1"></div>
+                        <p class="m-0">Booked</p>
+                      </div>
+                      <div
+                        class="box-inforp-3 mr-2  d-flex justify-content-center align-items-center"
+                      >
+                        <div class="selected mr-1"></div>
+                        <p class="m-0">Selected</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </article>
             </div>
           </div>
+          <!-- right -->
+          <!-- total money -->
           <div class="col" id="right">
-            <div class="box box-shadow rounded" id="sell-ticket"></div>
+            <div class="box box-shadow rounded" id="sell-ticket">
+              <div class="box-header p-3">
+                <h1>header</h1>
+                <hr class="bg-primary" />
+              </div>
+              <div class="box-content p-3">
+                <h3 class="w-25 d-inline">
+                  Total:
+                </h3>
+                <h3 id="price" class="w-20 d-inline float-right ">80.000</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
