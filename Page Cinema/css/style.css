@@ -12,6 +12,7 @@ img {
 .row {
   display: flex;
   margin-bottom: 10px;
+  margin-right: 0;
 }
 
 .col {
@@ -21,6 +22,7 @@ img {
 }
 .col:last-child {
   margin-right: 0;
+  padding-right: 0;
 }
 .box {
   min-height: 200px;
@@ -189,4 +191,43 @@ main.mt-5 {
 /* about quality */
 #ab-quality .circle {
   background-color: midnightblue;
+}
+
+/* movie */
+#movie h3 {
+  color: #fff;
+  padding: 20px 20px;
+  position: relative;
+}
+#movie h3::after {
+  content: "";
+
+  background-color: rgb(53, 178, 219);
+  height: 2px;
+  width: 50%;
+  bottom: 12px;
+  left: 0;
+
+  position: absolute;
+}
+#movie .row {
+  padding: 0 20px;
+}
+
+#movie img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#movie .box-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+
+#movie .box {
+  background-color: transparent;
 }

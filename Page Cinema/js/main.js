@@ -61,3 +61,23 @@ $(".owl-carousel").owlCarousel({
     }
   }
 });
+
+// tab phim đang chiếu, phim sắp chiếu
+var tabCurrentFilm = document.getElementById("tab-current-film");
+var tabUpcommingFilm = document.getElementById("tab-upcomming-film");
+
+var contentCurrentFilm = document.getElementById("content-current-film");
+var contentUpcommingFilm = document.getElementById("content-upcoming-film");
+
+console.log(tabUpcommingFilm);
+contentUpcommingFilm.style.display = "none";
+
+tabCurrentFilm.addEventListener("click", function(e) {
+  contentUpcommingFilm.style.display = "none";
+  contentCurrentFilm.style.display = "block";
+});
+
+tabUpcommingFilm.addEventListener("click", function(e) {
+  contentCurrentFilm.style.display = "none";
+  contentUpcommingFilm.style.display = "block";
+});
