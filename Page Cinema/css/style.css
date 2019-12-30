@@ -149,5 +149,44 @@ main.mt-5 {
 }
 #promotion h3 {
   color: #fff;
-  padding: 40px 20px 30px 20px;
+  padding: 40px 20px 0px 30px;
+}
+
+/* about */
+#about .box {
+  min-height: 70vh;
+
+  box-shadow: -1px 0px 20px 15px rgba(255, 255, 255, 0.596);
+  background-color: black;
+}
+
+#about h4 {
+  margin-top: 10px;
+  font-weight: 200;
+  color: #fff;
+  text-transform: uppercase;
+}
+#about p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+/* about time */
+#ab-time .circle {
+  background-color: gold;
+}
+
+/* about price */
+#ab-price .circle {
+  background-color: lawngreen;
+}
+/* about quality */
+#ab-quality .circle {
+  background-color: midnightblue;
 }
