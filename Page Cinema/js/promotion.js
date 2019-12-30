@@ -39,6 +39,7 @@ for (i = 0; i < seats.length; i++) {
 
 var selected = [];
 var total = 0;
+var seatIndex = "";
 function toggleSelected(event) {
   $(event.target).toggleClass("selected");
   seatID = $(event.target).attr("id-ghe");
@@ -53,9 +54,12 @@ function toggleSelected(event) {
 
   if (event.target.classList.contains("selected")) {
     total = total + Number(seatPrice);
+    seatIndex = seatIndex + " " + seatID;
   } else {
     total = total - Number(seatPrice);
+    seatIndex = "";
   }
   // Gắn giá vào màn hình
   $("#price").text(total);
+  $("#SeatIndex").text(seatIndex);
 }

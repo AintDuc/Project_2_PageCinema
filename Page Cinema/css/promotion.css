@@ -7,6 +7,8 @@ h1,
 h2,
 h3,
 p {
+  margin: 0;
+  padding: 0;
   color: #eee;
 }
 img {
@@ -201,6 +203,9 @@ li:hover .sub-menu {
 #sell-ticket.box {
   position: sticky;
   top: 20px;
+}
+.float-right {
+  float: right;
 }
 
 /* footer */

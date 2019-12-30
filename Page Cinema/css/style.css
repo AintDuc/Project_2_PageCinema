@@ -45,6 +45,11 @@ nav {
   position: relative;
 }
 
+.slide {
+  transition: 1s;
+  position: absolute;
+}
+
 .buy-ticket {
   background-color: lightgreen;
   min-height: 60vh;
@@ -128,4 +133,8 @@ li:hover .sub-menu {
 }
 .sub-menu li:hover .sub-menu-child {
   max-height: 100vh;
+}
+
+main.mt-5 {
+  margin-top: 7rem !important;
 }
