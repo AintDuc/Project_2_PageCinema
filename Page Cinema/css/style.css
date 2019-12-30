@@ -135,6 +135,19 @@ li:hover .sub-menu {
   max-height: 100vh;
 }
 
+/* main */
+main {
+  background-image: url(../img/movie-details-bg.jpg);
+}
 main.mt-5 {
-  margin-top: 7rem !important;
+  margin-top: 5rem !important;
+}
+
+/* khuyến mãi */
+#promotion {
+  position: relative;
+}
+#promotion h3 {
+  color: #fff;
+  padding: 40px 20px 30px 20px;
 }
