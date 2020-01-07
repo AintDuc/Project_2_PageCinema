@@ -9,6 +9,9 @@ img {
   vertical-align: middle;
 }
 
+body {
+  background-color: black;
+}
 .row {
   display: flex;
   margin-bottom: 10px;
@@ -169,6 +172,7 @@ main.mt-5 {
   text-transform: uppercase;
 }
 #about p {
+  padding: 20px;
   color: #fff;
   font-size: 20px;
   text-align: center;
@@ -231,3 +235,48 @@ main.mt-5 {
 #movie .box {
   background-color: transparent;
 }
+
+#content-upcoming-film {
+  animation: fade 0.5s 1 linear;
+}
+#content-current-film {
+  animation: fade 0.5s 1 linear;
+}
+
+/* bình luận và tin tức */
+#comment-and-new .box {
+  background-color: lightcoral;
+  border: 1px solid #000;
+}
+
+.btn-like-group i.fa-users {
+  font-size: 20px;
+}
+.btn-like-group i.fa-star {
+  color: gold;
+}
+#comment-and-new {
+  background-image: url(../img/movie-details-bg.jpg);
+}
+#comment-and-new h3 {
+  color: #fff;
+  padding: 20px;
+}
+/* footer */
+footer .box {
+  margin-top: 20px;
+  box-shadow: -1px 0px 20px 15px #fff;
+  background-color: black;
+}
+
+/* animation */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* moblie responsive */
