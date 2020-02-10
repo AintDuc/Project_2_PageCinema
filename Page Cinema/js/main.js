@@ -16,6 +16,19 @@ byFilm.addEventListener("click", function(e) {
   ctFilm.style.display = "block";
 });
 
+// mua vé, chuyển đổi màu
+var h1TabCinema = $("#by-cinema").children();
+var h1TabFilm = $("#by-film").children();
+
+h1TabCinema.click(function() {
+  $(this).addClass("tabChange");
+  h1TabFilm.removeClass("tabChange");
+});
+h1TabFilm.click(function() {
+  $(this).addClass("tabChange");
+  h1TabCinema.removeClass("tabChange");
+});
+
 // slider
 var slides = document.getElementById("slides");
 var slider = document.getElementsByClassName("slide");
@@ -69,7 +82,21 @@ var tabUpcommingFilm = document.getElementById("tab-upcomming-film");
 var contentCurrentFilm = document.getElementById("content-current-film");
 var contentUpcommingFilm = document.getElementById("content-upcoming-film");
 
-console.log(tabUpcommingFilm);
+var h3TabCurrentFilm = $("#tab-current-film").children();
+var h3TabUpcommingFilm = $("#tab-upcomming-film").children();
+
+// khi tab này click thì có màu, tab còn lại không màu
+h3TabCurrentFilm.click(function() {
+  console.log("okee");
+  $(this).addClass("movieTabCurrent");
+  $(h3TabUpcommingFilm).removeClass("movieTabCurrent");
+});
+h3TabUpcommingFilm.click(function() {
+  console.log("da lick");
+  $(this).addClass("movieTabCurrent");
+  $(h3TabCurrentFilm).removeClass("movieTabCurrent");
+});
+
 contentUpcommingFilm.style.display = "none";
 
 tabCurrentFilm.addEventListener("click", function(e) {

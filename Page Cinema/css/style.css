@@ -57,25 +57,51 @@ nav {
 
 .buy-ticket {
   background-color: lightgreen;
-  min-height: 60vh;
-  width: 20vw;
+  min-height: 50vh;
+  width: 25vw;
   position: absolute;
-  right: 10%;
-  top: 50%;
+
+  top: 55%;
+  right: 5%;
   transform: translate(0, -50%);
   display: flex;
   flex-direction: column;
 }
+.buy-ticket h1 {
+  font-size: 20px;
+}
+
 .tab-header {
   display: flex;
   flex-grow: 1;
+  position: relative;
+}
+.tab-header h1 {
+  padding: 10px;
 }
 
 .tab-content {
   display: flex;
   flex-grow: 9;
 }
+#by-cinema {
+  margin-right: 20px;
+  position: relative;
+}
 
+.tab-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(53, 178, 219);
+}
+
+.tabChange {
+  background-color: rgb(53, 178, 219);
+}
 #ct-cinema {
   display: none;
   background-color: lightcoral;
@@ -198,22 +224,32 @@ main.mt-5 {
 }
 
 /* movie */
+#movie .tab-header {
+  padding-left: 15px;
+}
 #movie h3 {
   color: #fff;
-  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: 300;
   position: relative;
+  padding: 10px;
 }
-#movie h3::after {
+#movie #tab-current-film h3::after {
   content: "";
-
   background-color: rgb(53, 178, 219);
   height: 2px;
-  width: 50%;
-  bottom: 12px;
+  width: 97vw;
+  bottom: -4px;
   left: 0;
-
   position: absolute;
 }
+.movieTabCurrent {
+  background-color: rgb(61, 178, 207);
+}
+#movie #tab-current-film {
+  margin-right: 20px;
+}
+
 #movie .row {
   padding: 0 20px;
 }
@@ -244,11 +280,27 @@ main.mt-5 {
 }
 
 /* bình luận và tin tức */
-#comment-and-new .box {
-  background-color: lightcoral;
-  border: 1px solid #000;
+#comment-and-new .comment-header h3 {
+  position: relative;
+  padding: 0 20px;
 }
-
+#comment-and-new .comment-header h3::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  left: 20px;
+  bottom: 0;
+  background-color: rgb(61, 178, 207);
+}
+#comment-and-new .box {
+  background-color: transparent;
+  color: #fff;
+  border: unset;
+}
+#comment-content {
+  padding-left: 20px;
+}
 .btn-like-group i.fa-users {
   font-size: 20px;
 }
@@ -260,7 +312,23 @@ main.mt-5 {
 }
 #comment-and-new h3 {
   color: #fff;
-  padding: 20px;
+}
+
+.new-header h3 {
+  position: relative;
+  padding: 0 20px;
+}
+#new-content {
+  padding-left: 20px;
+}
+#comment-and-new .new-header h3::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  left: 20px;
+  bottom: 0;
+  background-color: rgb(61, 178, 207);
 }
 /* footer */
 footer .box {

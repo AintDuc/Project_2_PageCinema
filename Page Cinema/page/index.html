@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Page Cinema</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -63,18 +63,36 @@
         <div class="buy-ticket">
           <div class="tab-header">
             <div id="by-cinema">
-              <h1>Theo rap</h1>
+              <h1 class="tabChange">Theo rap</h1>
             </div>
             <div id="by-film">
               <h1>Theo phim</h1>
             </div>
           </div>
           <div class="tab-content">
-            <div id="ct-cinema">
-              <p>Content Cinema</p>
+            <div id="ct-cinema" class="d-flex flex-column">
+              <select name="theaters" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select name="theaters" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select name="theaters" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
             </div>
-            <div id="ct-film">
-              <p>Content film</p>
+            <div id="ct-film" class="d-flex flex-column">
+              <select name="theaters" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
             </div>
           </div>
           <div id="tab-footer">
@@ -190,7 +208,7 @@
       <section id="movie">
         <div class="tab-header">
           <div id="tab-current-film">
-            <h3>Phim đang chiếu</h3>
+            <h3 class="movieTabCurrent">Phim đang chiếu</h3>
           </div>
           <div id="tab-upcomming-film">
             <h3>Phim sắp chiếu</h3>
@@ -295,7 +313,10 @@
         <div class="row">
           <!-- bình luận -->
           <div class="col">
-            <div class="box">
+            <div class="comment-header">
+              <h3>Góc bình luận</h3>
+            </div>
+            <div class="box" id="comment-content">
               <div class="row">
                 <div class="col">
                   <div class="box">
@@ -311,13 +332,48 @@
                             Lorem ipsum dolor, sit amet consectetur adipisicing
                           </h4>
                           <div class="btn-like-group">
-                            <button class="btn btn-primary">Like</button>
+                            <button class="btn btn-primary pl-3 pr-3">
+                              Like 17
+                            </button>
                             <button class="btn btn-light">
                               <i class="fas fa-users"></i>
                               3609
                             </button>
                             <i class="fas fa-star"></i>
-                            <p>5</p>
+                            <span>5</span>
+                          </div>
+                          <div>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Eum totam officia odio rerum
+                              corrupti ad natus? Nesciunt consequuntur quasi
+                              mollitia?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="box">
+                          <img src="../img/entry01.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="box">
+                          <h4>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                          </h4>
+                          <div class="btn-like-group">
+                            <button class="btn btn-primary pl-3 pr-3">
+                              Like 17
+                            </button>
+                            <button class="btn btn-light">
+                              <i class="fas fa-users"></i>
+                              3609
+                            </button>
+                            <i class="fas fa-star"></i>
+                            <span>5</span>
                           </div>
                           <div>
                             <p>
@@ -333,18 +389,82 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col">
-                  <div class="box"></div>
-                </div>
-              </div>
             </div>
           </div>
           <!-- tin tức -->
           <div class="col">
-            <div class="box">
-              <div class="box-header"><h3>Tin tức</h3></div>
-              <div class="box-content"></div>
+            <div class="new-header">
+              <h3>Điện ảnh</h3>
+            </div>
+            <div class="box" id="new-content">
+              <div class="box-header">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="box">
+                      <img src="../img/entry01.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="box">
+                      <h4>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                      </h4>
+                      <div class="btn-like-group">
+                        <button class="btn btn-primary pl-3 pr-3">
+                          Like 17
+                        </button>
+                        <button class="btn btn-light">
+                          <i class="fas fa-users"></i>
+                          3609
+                        </button>
+                        <i class="fas fa-star"></i>
+                        <span>5</span>
+                      </div>
+                      <div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Eum totam officia odio rerum corrupti ad natus?
+                          Nesciunt consequuntur quasi mollitia?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-header">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="box">
+                      <img src="../img/entry01.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="box">
+                      <h4>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                      </h4>
+                      <div class="btn-like-group">
+                        <button class="btn btn-primary pl-3 pr-3">
+                          Like 17
+                        </button>
+                        <button class="btn btn-light">
+                          <i class="fas fa-users"></i>
+                          3609
+                        </button>
+                        <i class="fas fa-star"></i>
+                        <span>5</span>
+                      </div>
+                      <div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Eum totam officia odio rerum corrupti ad natus?
+                          Nesciunt consequuntur quasi mollitia?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

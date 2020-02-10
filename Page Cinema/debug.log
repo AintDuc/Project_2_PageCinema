@@ -1,0 +1,6 @@
+[0210/134637.823:ERROR:process_info.cc(359)] UncheckedAllocate
+[0210/134637.867:ERROR:process_info.cc(359)] UncheckedAllocate
+[0210/134637.951:ERROR:process_info.cc(359)] UncheckedAllocate
+[0210/134644.709:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\ASUS\AppData\Local\Google\Chrome\User Data\Crashpad\reports\b3b19c84-8628-4a9f-a28d-d5264c8a2811.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[0210/134644.915:ERROR:process_info.cc(359)] UncheckedAllocate
+[0210/134644.944:ERROR:process_memory_win.cc(73)] ReadMemory at 0x170c8df2d06 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
