@@ -3,7 +3,22 @@
   margin: 0;
   padding: 0;
 }
-
+/* style scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px lightcyan;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffc107;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffc107e0;
+  cursor: progress;
+}
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -42,6 +57,9 @@ nav {
   left: 50%;
   transform: translate(-50%, 0);
 }
+nav ul {
+  margin-bottom: 0;
+}
 
 /* mua vé  */
 .slider {
@@ -55,8 +73,8 @@ nav {
   position: absolute;
 }
 
-.buy-ticket {
-  background-color: lightgreen;
+#buy-ticket {
+  background-color: rgba(25, 26, 26, 0.623);
   min-height: 50vh;
   width: 25vw;
   position: absolute;
@@ -65,15 +83,18 @@ nav {
   right: 5%;
   transform: translate(0, -50%);
   display: flex;
+
   flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 2px 20px 5px #fff;
 }
-.buy-ticket h1 {
+#buy-ticket h1 {
   font-size: 20px;
+  color: #fff;
 }
 
 .tab-header {
   display: flex;
-  flex-grow: 1;
   position: relative;
 }
 .tab-header h1 {
@@ -82,41 +103,94 @@ nav {
 
 .tab-content {
   display: flex;
-  flex-grow: 9;
 }
-#by-cinema {
-  margin-right: 20px;
+#buy-ticket .tab-header #by-cinema h1 {
   position: relative;
+  padding: 20px;
+}
+#buy-ticket .tab-header #by-film h1 {
+  padding: 20px;
 }
 
-.tab-header::after {
+#buy-ticket .tab-header #by-cinema h1::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 30px;
+  bottom: 0px;
   height: 2px;
-  width: 100%;
+  width: 384px;
   background-color: rgb(53, 178, 219);
+}
+#buy-ticket .tab-header {
+  flex-grow: 2;
+}
+#buy-ticket .tab-content {
+  flex-grow: 5;
 }
 
 .tabChange {
   background-color: rgb(53, 178, 219);
+  border-top-left-radius: 10px;
 }
 #ct-cinema {
   display: none;
-  background-color: lightcoral;
+  background-color: transparent;
+  border: unset;
   height: 100%;
+}
+#ct-cinema select {
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#ct-cinema option {
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.356);
+  color: #fff;
+  border: 1px solid #fff;
+}
+#ct-cinema select:last-child {
+  margin-bottom: 0;
 }
 #ct-film {
   display: none;
-  background-color: lightyellow;
+  background-color: transparent;
+  border: unset;
   height: 100%;
+}
+#ct-film select {
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#ct-film option {
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#ct-film select:last-child {
+  margin-bottom: 0;
 }
 .d-flex {
   display: flex;
 }
+#buy-ticket .tab-footer {
+  justify-content: flex-end;
+  margin: 0 20px 20px 0;
+}
 
-#tab-footer {
+.tab-footer {
   display: flex;
 }
 a {

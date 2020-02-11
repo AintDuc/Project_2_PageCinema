@@ -60,7 +60,7 @@
         <img class="slide" src="../img/Slider (1).jpg" alt="" />
         <img class="slide" src="../img/Slider (2).jpg" alt="" />
         <img class="slide" src="../img/Slider (3).png" alt="" />
-        <div class="buy-ticket">
+        <div id="buy-ticket">
           <div class="tab-header">
             <div id="by-cinema">
               <h1 class="tabChange">Theo rap</h1>
@@ -70,33 +70,59 @@
             </div>
           </div>
           <div class="tab-content">
-            <div id="ct-cinema" class="d-flex flex-column">
+            <div
+              id="ct-cinema"
+              class="d-flex flex-column flex-around form-control"
+              name="sellist1"
+            >
+              <select name="theaters" id="" value="">
+                <option value="1" selected disabled>Chọn rạp</option>
+                <option value="4">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
               <select name="theaters" id="">
+                <option value="22" selected disabled>chọn ngày</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
               <select name="theaters" id="">
+                <option value="22" selected disabled>chọn suất</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
               <select name="theaters" id="">
+                <option value="22" selected disabled>chọn phim</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
             </div>
-            <div id="ct-film" class="d-flex flex-column">
+            <div id="ct-film" class="">
+              <select name="theaters" id="" value="">
+                <option value="1" selected disabled>Chọn rạp</option>
+                <option value="4">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
               <select name="theaters" id="">
+                <option value="22" selected disabled>chọn ngày</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select name="theaters" id="">
+                <option value="22" selected disabled>chọn suất</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
             </div>
           </div>
-          <div id="tab-footer">
-            <p>Tab-footer</p>
+          <div class="tab-footer">
+            <button class="btn btn-info">Mua vé</button>
           </div>
         </div>
       </div>

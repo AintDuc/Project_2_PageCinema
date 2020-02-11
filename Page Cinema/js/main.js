@@ -9,11 +9,17 @@ var ctFilm = document.getElementById("ct-film");
 // Khi ấn vào cái nào thì xuất hiện nội dung cái đó
 byCinema.addEventListener("click", function(e) {
   ctFilm.style.display = "none";
-  ctCinema.style.display = "block";
+  ctCinema.style.display = "flex";
+
+  $(ctCinema).addClass("d-flex flex-column flex-around form-control");
+  $(ctFilm).removeClass();
 });
 byFilm.addEventListener("click", function(e) {
   ctCinema.style.display = "none";
-  ctFilm.style.display = "block";
+  ctFilm.style.display = "flex";
+
+  $(ctCinema).removeClass();
+  $(ctFilm).addClass("d-flex flex-column flex-around form-control");
 });
 
 // mua vé, chuyển đổi màu
