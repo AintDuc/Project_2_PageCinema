@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page Cinema</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- owl carousel css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <!-- css main page -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- nav -->
+      <nav>
+        <ul class="d-flex">
+          <li>
+            <a href="#" class="logo-link"
+              >film
+              <span class="logo-world"
+                >W<i class="fas fa-globe-americas"></i>RLD</span
+              >
+            </a>
+          </li>
+          <li class="film-world">
+            <div class="film-world-icon">
+              <img src="./../img/home-icon.png" />
+            </div>
+            <div class="film-world-content">
+              <a href="./worldFilm.html">
+                <span><i class="fas fa-camera-retro"></i></span> Thế giới
+                phim</a
+              >
+            </div>
+            <ul class="sub-menu">
+              <li><a href="">item list 1</a></li>
+              <li>
+                <a href="">item list 2 > </a>
+                <ul class="sub-menu-child">
+                  <li><a href="">item child 1</a></li>
+                  <li><a href="">item child 2</a></li>
+                  <li><a href="">item child 3</a></li>
+                </ul>
+              </li>
+              <li><a href="">item list 3</a></li>
+            </ul>
+          </li>
+          <li class="cinema-angle">
+            <div class="cinema-angle-content">
+              <a href=""
+                ><span><i class="far fa-file-image"></i></span> Góc điện ảnh</a
+              >
+            </div>
+            <ul class="cinema-angle-sub">
+              <li>item 1</li>
+              <li>
+                item 2
+                <ul class="cinema-angle-sub-sub">
+                  <li>item sub 1</li>
+                  <li>item sub 2</li>
+                  <li>item sub 3</li>
+                </ul>
+              </li>
+              <li>item 3</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <i class="fas fa-volume-up"></i>
+              </span>
+              Khuyến mãi</a
+            >
+          </li>
+          <li class="member">
+            <div class="member-content">
+              <a href="">
+                <span><i class="fas fa-address-book"></i></span>
+                Thành viên</a
+              >
+            </div>
+            <ul class="member-sub">
+              <li>member sub 1</li>
+              <li class="member-sub-2-css">
+                member sub 2
+                <ul class="member-sub-child">
+                  <li>member sub child 1</li>
+                  <li>member sub child 3</li>
+                  <li>member sub child 2</li>
+                </ul>
+              </li>
+              <li>member sub 1</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- slider -->
+      <div class="slider">
+        <img class="slide" src="../img/Slider (1).jpg" alt="" />
+        <img class="slide" src="../img/Slider (2).jpg" alt="" />
+        <img class="slide" src="../img/Slider (3).png" alt="" />
+        <div id="buy-ticket">
+          <div class="tab-header">
+            <div id="by-cinema">
+              <div class="tabChange by-cinema-content">Theo rap</div>
+            </div>
+            <div id="by-film">
+              <div class="by-film-content">Theo phim</div>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div
+              id="ct-cinema"
+              class="d-flex flex-column flex-around form-control"
+              name="sellist1"
+            >
+              <select name="theaters" id="" value="">
+                <option value="1" selected disabled>Chọn rạp</option>
+                <option value="4">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select name="theaters" id="">
+                <option value="22" selected disabled>chọn ngày</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select name="theaters" id="">
+                <option value="22" selected disabled>chọn suất</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select name="theaters" id="">
+                <option value="22" selected disabled>chọn phim</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div id="ct-film" class="">
+              <select name="theaters" id="" value="">
+                <option value="1" selected disabled>Chọn rạp</option>
+                <option value="4">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select name="theaters" id="">
+                <option value="22" selected disabled>chọn ngày</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select name="theaters" id="">
+                <option value="22" selected disabled>chọn suất</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+          <div class="tab-footer">
+            <button class="btn btn-buy-ticket">
+              <p>$ Mua vé</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-5">
+      <!-- Danh sach khuyen mai -->
+      <section id="promotion">
+        <h3>Danh sách khuyến mãi</h3>
+        <div class="row owl-carousel owl-theme p-3">
+          <div class="col item">
+            <div class="box">
+              <img src="../img/promotion01.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col item">
+            <div class="box">
+              <img src="../img/promotion02.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col item">
+            <div class="box">
+              <img src="../img/promotion03.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col item">
+            <div class="box">
+              <img src="../img/promotion04.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col item">
+            <div class="box">
+              <img src="../img/promotion05.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section id="about">
+        <div class="row p-3">
+          <div class="col-12 col-xl-4 col-lg-4">
+            <div class="box" id="ab-time">
+              <div
+                class="box-header d-flex justify-content-center align-items-center flex-column p-3"
+              >
+                <div class="circle">
+                  <img src="./../img/time-icon.png" alt="" />
+                </div>
+                <h4>Thời gian linh hoạt</h4>
+              </div>
+              <div class="box-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Impedit ducimus, molestias deleniti placeat rerum veritatis
+                  fuga suscipit porro ullam est voluptatum aperiam adipisci
+                  minima necessitatibus quibusdam facere harum ex molestiae
+                  asperiores! Cumque, explicabo architecto. Ut est quod in. In
+                  voluptas architecto saepe placeat eos ducimus porro neque nemo
+                  qui recusandae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4">
+            <div class="box" id="ab-price">
+              <div
+                class="box-header d-flex justify-content-center align-items-center flex-column p-3"
+              >
+                <div class="circle">
+                  <img src="./../img/money-icon.png" alt="" />
+                </div>
+                <h4>Giá sinh viên</h4>
+              </div>
+              <div class="box-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Impedit ducimus, molestias deleniti placeat rerum veritatis
+                  fuga suscipit porro ullam est voluptatum aperiam adipisci
+                  minima necessitatibus quibusdam facere harum ex molestiae
+                  asperiores! Cumque, explicabo architecto. Ut est quod in. In
+                  voluptas architecto saepe placeat eos ducimus porro neque nemo
+                  qui recusandae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4">
+            <div class="box" id="ab-quality">
+              <div
+                class="box-header d-flex justify-content-center align-items-center flex-column p-3"
+              >
+                <div class="circle">
+                  <img src="./../img/quality-icon.png" alt="" />
+                </div>
+                <h4>Chất lượng tuyệt đối</h4>
+              </div>
+              <div class="box-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Impedit ducimus, molestias deleniti placeat rerum veritatis
+                  fuga suscipit porro ullam est voluptatum aperiam adipisci
+                  minima necessitatibus quibusdam facere harum ex molestiae
+                  asperiores! Cumque, explicabo architecto. Ut est quod in. In
+                  voluptas architecto saepe placeat eos ducimus porro neque nemo
+                  qui recusandae.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- movie -->
+      <section id="movie">
+        <div class="tab-header">
+          <div id="tab-current-film">
+            <h3 class="movieTabCurrent">Phim đang chiếu</h3>
+          </div>
+          <div id="tab-upcomming-film">
+            <h3>Phim sắp chiếu</h3>
+          </div>
+        </div>
+        <!-- phim đang chiếu -->
+        <div id="content-current-film">
+          <div class="row">
+            <div class="col-6 col-xl-3 col-lg-3">
+              <div class="box">
+                <img src="../img/1.jpg" alt="" />
+                <div class="box-footer">
+                  <p>content</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-3 col-lg-3">
+              <div class="box">
+                <img src="../img/2.jpg" alt="" />
+                <div class="box-footer">
+                  <p>content</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-3 col-lg-3">
+              <div class="box">
+                <img src="../img/3.jpg" alt="" />
+                <div class="box-footer">
+                  <p>content</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-3 col-lg-3">
+              <div class="box">
+                <img src="../img/4.jpg" alt="" />
+                <div class="box-footer">
+                  <p>content</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-xl-3 col-lg-3">
+              <div class="box">
+                <img src="../img/5.jpg" alt="" />
+                <div class="box-footer">
+                  <p>content</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-3 col-lg-3">
+              <div class="box">
+                <img src="../img/6.jpg" alt="" />
+                <div class="box-footer">
+                  <p>content</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-3 col-lg-3">
+              <div class="box">
+                <img src="../img/7.jpg" alt="" />
+                <div class="box-footer">
+                  <p>content</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-3 col-lg-3">
+              <div class="box">
+                <img src="../img/8.jpg" alt="" />
+                <div class="box-footer">
+                  <p>content</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- phim sắp chiếu -->
+        <div id="content-upcoming-film">
+          <div class="row">
+            <div class="col-6 col-xl-3">
+              <div class="box">
+                <img src="../img/9.jpg" alt="" />
+                <div class="box-footer">
+                  <p>content</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-3">
+              <div class="box">
+                <img src="../img/10.jpg" alt="" />
+                <div class="box-footer">
+                  <p>content</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Goc binh luan va tin tuc -->
+      <section id="comment-and-new">
+        <div class="row">
+          <!-- bình luận -->
+          <div class="col-12 col-xl-6 col-lg-6">
+            <div class="comment-header">
+              <h3>Góc bình luận</h3>
+            </div>
+            <div class="box" id="comment-content">
+              <div class="row">
+                <div class="col">
+                  <div class="box">
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="box">
+                          <img src="../img/entry01.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="box">
+                          <h4>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                          </h4>
+                          <div class="btn-like-group">
+                            <button class="btn btn-primary pl-3 pr-3">
+                              Like 17
+                            </button>
+                            <button class="btn btn-light">
+                              <i class="fas fa-users"></i>
+                              3609
+                            </button>
+                            <i class="fas fa-star"></i>
+                            <span>5</span>
+                          </div>
+                          <div>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Eum totam officia odio rerum
+                              corrupti ad natus? Nesciunt consequuntur quasi
+                              mollitia?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="box">
+                          <img src="../img/entry02.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="box">
+                          <h4>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                          </h4>
+                          <div class="btn-like-group">
+                            <button class="btn btn-primary pl-3 pr-3">
+                              Like 17
+                            </button>
+                            <button class="btn btn-light">
+                              <i class="fas fa-users"></i>
+                              3609
+                            </button>
+                            <i class="fas fa-star"></i>
+                            <span>5</span>
+                          </div>
+                          <div>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Eum totam officia odio rerum
+                              corrupti ad natus? Nesciunt consequuntur quasi
+                              mollitia?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- tin tức -->
+          <div class="col-12 col-xl-6 col-lg-6">
+            <div class="new-header">
+              <h3>Điện ảnh</h3>
+            </div>
+            <div class="box" id="new-content">
+              <div class="box-header">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="box">
+                      <img src="../img/blog01.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="box">
+                      <h4>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                      </h4>
+                      <div class="btn-like-group">
+                        <button class="btn btn-primary pl-3 pr-3">
+                          Like 17
+                        </button>
+                        <button class="btn btn-light">
+                          <i class="fas fa-users"></i>
+                          3609
+                        </button>
+                        <i class="fas fa-star"></i>
+                        <span>5</span>
+                      </div>
+                      <div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Eum totam officia odio rerum corrupti ad natus?
+                          Nesciunt consequuntur quasi mollitia?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-header">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="box">
+                      <img src="../img/blog02.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="box">
+                      <h4>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                      </h4>
+                      <div class="btn-like-group">
+                        <button class="btn btn-primary pl-3 pr-3">
+                          Like 17
+                        </button>
+                        <button class="btn btn-light">
+                          <i class="fas fa-users"></i>
+                          3609
+                        </button>
+                        <i class="fas fa-star"></i>
+                        <span>5</span>
+                      </div>
+                      <div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Eum totam officia odio rerum corrupti ad natus?
+                          Nesciunt consequuntur quasi mollitia?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="box">
+        <div class="row">
+          <div class="col-6 col-xl-3 col-lg-3">
+            <div class="box">
+              <div class="box-header">
+                Giới thiệu
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    <span><i class="fas fa-arrow-circle-right"></i></span> link
+                    1
+                  </li>
+                  <li>
+                    <span><i class="fas fa-arrow-circle-right"></i></span> link
+                    2
+                  </li>
+                  <li>
+                    <span><i class="fas fa-arrow-circle-right"></i></span> link
+                    3
+                  </li>
+                  <li>
+                    <span><i class="fas fa-arrow-circle-right"></i></span> link
+                    4
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xl-3 col-lg-3">
+            <div class="box">
+              <div class="box-header">
+                Góc điện ảnh
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    <span><i class="fas fa-file-video"></i></span> link 1
+                  </li>
+                  <li>
+                    <span><i class="fas fa-file-video"></i></span> link 2
+                  </li>
+                  <li>
+                    <span><i class="fas fa-file-video"></i></span> link 3
+                  </li>
+                  <li>
+                    <span><i class="fas fa-file-video"></i></span> link 4
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xl-3 col-lg-3">
+            <div class="box">
+              <div class="box-header">Hỗ trợ</div>
+              <div class="box-content">
+                <ul>
+                  <li>content i</li>
+                  <li>content i</li>
+                  <li>content i</li>
+                  <li>content i</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xl-3 col-lg-3 ft-last-col">
+            <div class="box">
+              <div class="row">
+                <div class="col">
+                  <div class="box">
+                    <div class="box-header">
+                      Liên kết
+                    </div>
+                    <div class="box-content">
+                      <ul>
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-youtube-square"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-google-plus"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="box">
+                    <div class="box-header">
+                      download app
+                    </div>
+                    <div class="box-content">
+                      <ul>
+                        <li><i class="fab fa-android"></i></li>
+                        <li><i class="fab fa-apple"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- owl carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

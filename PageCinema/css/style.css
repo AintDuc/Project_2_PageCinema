@@ -1,0 +1,878 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* style scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px lightcyan;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffc107;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffc107e0;
+  cursor: progress;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  background-color: black;
+}
+.row {
+  display: flex;
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+.col {
+  width: 100%;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+.col:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+.box {
+  min-height: 200px;
+  background-color: lightcoral;
+}
+
+/* thanh nav */
+nav {
+  background-color: black;
+  position: fixed;
+  z-index: 10;
+  width: 96vw;
+  top: 1vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+nav ul {
+  margin-bottom: 0;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.2s;
+  transform: scaleX(0);
+  transform-origin: right left;
+}
+
+nav a:hover::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform: scaleX(1);
+}
+
+nav > ul > li:first-child {
+  padding: 10px 100px;
+}
+
+.logo-link {
+  font-size: 30px;
+}
+
+.logo-world {
+  font-size: 35px;
+}
+
+nav li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+}
+
+/* film world */
+
+.film-world-icon {
+  height: 100%;
+  width: 40px;
+}
+.film-world-content {
+  position: relative;
+}
+.film-world-content::after {
+  content: "";
+  position: absolute;
+  left: 105%;
+  top: 10%;
+  height: 13px;
+  width: 13px;
+  background-color: transparent;
+  border-width: 0 3px 3px 0;
+  border-color: #fff;
+  border-style: solid;
+  transform: rotate(45deg);
+}
+
+/* cinema-angle */
+.cinema-angle {
+  position: relative;
+}
+.cinema-angle:hover .cinema-angle-sub {
+  max-height: 100vh;
+}
+.cinema-angle-sub {
+  max-height: 0;
+  overflow: hidden;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  transition: 0.5s;
+}
+.cinema-angle-sub:hover {
+  overflow: initial;
+}
+.cinema-angle-sub li {
+  color: #fff;
+}
+.cinema-angle-sub li:nth-child(2) {
+  position: relative;
+}
+.cinema-angle-sub li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: 65%;
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0 3px 3px 0;
+  border-color: #ffff;
+  transform: rotate(-45deg);
+}
+.cinema-angle-sub li:nth-child(2):hover {
+  cursor: pointer;
+}
+
+.cinema-angle-sub li:nth-child(2):hover .cinema-angle-sub-sub {
+  max-height: 100vh;
+}
+
+.cinema-angle-sub li:nth-child(2):hover .cinema-angle-sub {
+  overflow: unset;
+}
+
+.cinema-angle-sub-sub {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  transition: 0.5s;
+  max-height: 0;
+  overflow: hidden;
+}
+.cinema-angle-sub-sub li:nth-child(2):hover {
+  cursor: initial;
+}
+.cinema-angle-sub-sub li:nth-child(2)::after {
+  display: none;
+}
+
+.cinema-angle-content {
+  position: relative;
+}
+.cinema-angle-content::after {
+  content: "";
+  position: absolute;
+  left: 105%;
+  top: 10%;
+  height: 13px;
+  width: 13px;
+  background-color: transparent;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* member */
+.member {
+  position: relative;
+}
+.member-content {
+  position: relative;
+}
+.member-content::after {
+  content: "";
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  left: 105%;
+  top: 10%;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.member:hover .member-sub {
+  max-height: 100vh;
+  overflow: initial;
+}
+
+.member-sub {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.member-sub li {
+  color: #ffff;
+}
+.member-sub-2-css {
+  position: relative;
+}
+.member-sub-2-css:hover {
+  cursor: pointer;
+}
+.member-sub-2-css::after {
+  content: "";
+  position: absolute;
+  right: 75%;
+
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0 3px 3px 0;
+  border-color: #ffff;
+  transform: rotate(135deg);
+}
+
+.member-sub-2-css:hover .member-sub-child {
+  max-height: 100vh;
+  overflow: initial;
+}
+.member-sub-child {
+  position: absolute;
+  right: 100%;
+  width: 100%;
+  top: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* mua vé  */
+.slider {
+  min-height: 100vh;
+  background-color: lightskyblue;
+  position: relative;
+}
+
+.slide {
+  transition: 1s;
+  position: absolute;
+}
+
+/* btn buy ticket css */
+
+#buy-ticket {
+  background-color: rgba(25, 26, 26, 0.623);
+  min-height: 50vh;
+  width: 25vw;
+  position: absolute;
+
+  top: 55%;
+  right: 5%;
+  transform: translate(0, -50%);
+  display: flex;
+
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 2px 20px 5px #fff;
+}
+#buy-ticket h1 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.btn-buy-ticket {
+  position: relative;
+
+  width: 100px;
+  height: 40px;
+  z-index: 3;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.btn-buy-ticket p {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+}
+.btn-buy-ticket::after {
+  z-index: 1;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.822);
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  color: #fff;
+  transition: 0.2s;
+  transform: scaleX(1);
+  transform-origin: right;
+  border-radius: 5px;
+}
+.btn-buy-ticket::before {
+  z-index: 1;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.822);
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  color: black;
+  transition: 0.2s;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.btn-buy-ticket:hover::after {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.btn-buy-ticket:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.btn-buy-ticket:hover p {
+  color: black;
+}
+
+/* tab css */
+.tab-header {
+  display: flex;
+  position: relative;
+}
+.tab-header h1 {
+  padding: 10px;
+}
+
+.tab-content {
+  display: flex;
+}
+
+.by-cinema-content {
+  color: #fff;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.by-film-content {
+  color: #fff;
+  padding: 10px 0;
+  cursor: pointer;
+}
+#buy-ticket .tab-header #by-cinema h1 {
+  position: relative;
+  padding: 20px;
+}
+#buy-ticket .tab-header #by-film h1 {
+  padding: 20px;
+}
+#buy-ticket .tab-header::after {
+  content: "";
+  position: absolute;
+  top: 86%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: darkturquoise;
+}
+#buy-ticket .tab-header #by-cinema h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 2px;
+  width: 384px;
+}
+#buy-ticket .tab-header {
+  height: 50px;
+}
+
+.tabChange-1 {
+  border-top-left-radius: 10px;
+  background-color: darkturquoise;
+}
+.tabChange-2 {
+  background-color: darkturquoise;
+}
+#ct-cinema {
+  display: none;
+  background-color: transparent;
+  border: unset;
+  height: 100%;
+}
+#ct-cinema select {
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#ct-cinema option {
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#ct-cinema select:focus {
+  outline: unset;
+}
+#ct-cinema select:last-child {
+  margin-bottom: 0;
+}
+#ct-film {
+  display: none;
+  background-color: transparent;
+  border: unset;
+  height: 100%;
+}
+#ct-film select {
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#ct-film select:focus {
+  outline: unset;
+}
+#ct-film option {
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#ct-film select:last-child {
+  margin-bottom: 0;
+}
+.d-flex {
+  display: flex;
+}
+#buy-ticket .tab-footer {
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.tab-footer {
+  display: flex;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  background-color: black;
+  padding: 20px 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.sub-menu {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.sub-menu:hover {
+  overflow: initial;
+}
+li:hover .sub-menu {
+  max-height: 100vh;
+}
+
+.sub-menu-child {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.sub-menu li:hover .sub-menu-child {
+  max-height: 100vh;
+}
+
+/* main */
+main {
+  background-image: url(../img/movie-details-bg.jpg);
+}
+main.mt-5 {
+  margin-top: 5rem !important;
+}
+
+/* khuyến mãi */
+#promotion {
+  position: relative;
+}
+#promotion h3 {
+  color: #fff;
+  padding: 40px 20px 0px 30px;
+}
+
+/* about */
+#about .box {
+  min-height: 70vh;
+
+  box-shadow: -1px 0px 20px 15px rgba(255, 255, 255, 0.596);
+  background-color: black;
+}
+
+#about h4 {
+  margin-top: 10px;
+  font-weight: 200;
+  color: #fff;
+  text-transform: uppercase;
+}
+#about p {
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+/* about time */
+#ab-time .circle {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 5px;
+}
+
+/* about price */
+#ab-price .circle {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 5px;
+}
+/* about quality */
+#ab-quality .circle {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 5px;
+}
+
+/* movie */
+#movie .tab-header {
+  padding-left: 15px;
+}
+#movie h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+  padding: 10px;
+}
+#movie #tab-current-film h3::after {
+  content: "";
+  background-color: rgb(53, 178, 219);
+  height: 2px;
+  width: 97vw;
+  bottom: -4px;
+  left: 0;
+  position: absolute;
+}
+.movieTabCurrent {
+  background-color: rgb(61, 178, 207);
+}
+#movie #tab-current-film {
+  margin-right: 20px;
+}
+
+#movie .row {
+  padding: 0 20px;
+}
+
+#movie img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#movie .box-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+
+#movie .box {
+  background-color: transparent;
+}
+
+#content-upcoming-film {
+  animation: fade 0.5s 1 linear;
+}
+#content-current-film {
+  animation: fade 0.5s 1 linear;
+}
+
+/* bình luận và tin tức */
+#comment-and-new .comment-header h3 {
+  position: relative;
+  padding: 0 20px;
+}
+#comment-and-new .comment-header h3::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  left: 20px;
+  bottom: 0;
+  background-color: rgb(61, 178, 207);
+}
+#comment-and-new .box {
+  background-color: transparent;
+  color: #fff;
+  border: unset;
+}
+#comment-content {
+  padding-left: 20px;
+}
+.btn-like-group i.fa-users {
+  font-size: 20px;
+}
+.btn-like-group i.fa-star {
+  color: gold;
+}
+#comment-and-new {
+  background-image: url(../img/movie-details-bg.jpg);
+}
+#comment-and-new h3 {
+  color: #fff;
+}
+
+.new-header h3 {
+  position: relative;
+  padding: 0 20px;
+}
+#new-content {
+  padding-left: 20px;
+}
+#comment-and-new .new-header h3::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  left: 20px;
+  bottom: 0;
+  background-color: rgb(61, 178, 207);
+}
+/* footer */
+footer > .box:first-child {
+  box-shadow: -1px 0px 20px 15px #fff;
+  background-color: black;
+}
+
+footer .col {
+  color: rgba(255, 255, 255, 0.877);
+}
+
+footer .box {
+  box-shadow: initial;
+  padding: 10px 30px;
+  background-color: transparent;
+}
+
+footer .box .box-header {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.788);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer .box-content ul {
+  padding: 10px 15px;
+}
+footer .box-content li {
+  text-align: start;
+  border: initial;
+  padding: 0;
+  margin: 0;
+  color: gray;
+  padding: 2px;
+
+  font-size: 20px;
+}
+footer .box-content li:hover {
+  cursor: pointer;
+}
+.ft-last-col {
+  padding: 10px 30px;
+}
+.ft-last-col .box {
+  min-height: 10px;
+  padding: 0;
+}
+.ft-last-col ul {
+  display: block;
+}
+.ft-last-col li {
+  display: inline;
+}
+/* animation */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* moblie responsive */
+@media only screen and (max-width: 576px) {
+  nav {
+    width: 100vw;
+  }
+  nav li {
+    padding: 2px;
+  }
+  nav > ul > li:first-child {
+    padding: 2px;
+  }
+
+  .film-world-icon {
+    width: 15px;
+  }
+  nav li a {
+    font-size: 9px;
+  }
+  .logo-link {
+    font-size: 12px;
+  }
+  .logo-world {
+    font-size: 12px;
+  }
+
+  .slider {
+    min-height: 40vh;
+  }
+
+  #buy-ticket {
+    min-height: unset;
+    width: unset;
+  }
+  #buy-ticket h1 {
+    font-size: 15px;
+    padding: 5px !important;
+    margin: 0;
+  }
+  #ct-cinema select {
+    margin-bottom: 5px;
+    padding: 1px;
+  }
+  #ct-film select {
+    margin-bottom: 5px;
+    padding: 1px;
+  }
+
+  #buy-ticket .tab-footer {
+    margin: 0;
+  }
+
+  .by-cinema-content {
+    padding: 10px 10px;
+  }
+  .by-film-content {
+    padding: 10px 10px;
+  }
+
+  .btn-buy-ticket p {
+    font-size: 13px;
+  }
+
+  /* promotion */
+  #promotion .row {
+    margin: unset;
+  }
+
+  /* about */
+  #about .row {
+    margin: unset;
+  }
+
+  footer .box .box-header {
+    font-size: 15px;
+  }
+  .ft-last-col {
+    padding: 10px 30px;
+    text-align: center;
+  }
+}
