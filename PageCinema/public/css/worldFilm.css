@@ -76,6 +76,7 @@ nav {
   top: 1vw;
   left: 50%;
   transform: translate(-50%, 0);
+  border-radius: 20px;
 }
 nav ul {
   margin-bottom: 0;
@@ -119,6 +120,10 @@ nav a:hover::after {
 
 nav > ul > li:first-child {
   padding: 10px 100px;
+  border-radius: 20px;
+}
+nav > ul > li:last-child {
+  border-radius: 20px;
 }
 
 .logo-link {
@@ -382,7 +387,7 @@ li:hover .sub-menu {
 }
 .box-title h3 {
   color: #eee;
-  font-size: 23px;
+  font-size: 22px;
 }
 .box-content p {
   color: #eee;
@@ -486,6 +491,20 @@ li:hover .sub-menu {
   width: 15px;
   border-radius: 100%;
   background-color: greenyellow;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+#price {
+  position: relative;
+}
+#price::after {
+  content: "$";
+  color: #fff;
+  margin-left: 10px;
 }
 
 .empty {
