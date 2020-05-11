@@ -26,7 +26,7 @@ app.use(seatAPIRouter);
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/page", "index.html"));
 });
-app.get("/world-film", (req, res) => {
+app.get("/film", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/page", "worldFilm.html"));
 });
 

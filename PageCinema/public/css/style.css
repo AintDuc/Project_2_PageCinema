@@ -47,6 +47,11 @@ body {
   background-color: lightcoral;
 }
 
+/* nav mobile */
+.wrapper {
+  display: none;
+}
+
 /* thanh nav */
 nav {
   background-color: black;
@@ -299,7 +304,7 @@ nav li {
 /* mua vé  */
 .slider {
   min-height: 100vh;
-  background-color: lightskyblue;
+  background-color: black;
   position: relative;
 }
 
@@ -806,18 +811,270 @@ footer li {
   }
 }
 
+/* nav mobile handle */
+#nav-mobile {
+  display: none;
+}
+
+.navMobileGoesIn {
+  animation: navMobileGoesIn 1s forwards;
+}
+.navMobileGoesOut {
+  animation: navMobileGoesOut 1s forwards;
+}
+
+.dongchay {
+  display: none;
+}
+.dongChayChay {
+  animation: dongChayChay 1s forwards;
+}
+
+.dongChayBienMat {
+  animation: dongChayBienMat 1s forwards;
+}
+@keyframes navMobileGoesIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes navMobileGoesOut {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes dongChayChay {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes dongChayBienMat {
+  from {
+    width: 80%;
+  }
+  to {
+    width: 0;
+  }
+}
 /* moblie responsive */
 @media only screen and (max-width: 576px) {
   nav {
-    width: 100vw;
-  }
-  nav li {
-    padding: 2px;
-  }
-  nav > ul > li:first-child {
-    padding: 2px;
+    display: none;
   }
 
+  /* nav mobile handle */
+
+  /* hambuger */
+
+  .wrapper {
+    z-index: 15;
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+  }
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    content: "";
+    display: block;
+  }
+  .hamburger-inner::before {
+    top: -10px;
+  }
+  .hamburger-inner::after {
+    bottom: -10px;
+  }
+
+  /*
+   * Squeeze
+   */
+  .hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.1s 0.14s ease, opacity 0.1s ease;
+  }
+  .hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.1s 0.14s ease,
+      transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease, opacity 0.1s 0.14s ease;
+  }
+  .hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease,
+      transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  /* nav mobile handle */
+  #nav-mobile {
+    position: fixed;
+    z-index: 14;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* thằng này chuyển động 1 tý */
+  .nav-mobile-tab {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    color: #fff;
+    align-items: center;
+    padding: 40px;
+    font-size: 35px;
+    animation: navMobileGoesIn 3s forwards;
+  }
+  .dongchay {
+    right: 46px;
+    position: absolute;
+    top: 75%;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #fff;
+  }
+
+  .nav-mobile-tab-content {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    color: #fff;
+
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    padding-top: 0;
+  }
+  /* để nhãn có animation giống content thì phải có tính chất giống content */
+  .cha-nhan {
+    margin: unset;
+    width: 100%;
+    height: 37px;
+    position: relative;
+    overflow: hidden;
+  }
+  .nhan {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .nav-mobile-tab-content .row {
+    margin: unset;
+    width: 100%;
+    height: 37px;
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-mobile-tab-content .col {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .nav-mobile-tab-content .row .col:nth-child(2) {
+    left: 50%;
+  }
+
+  .colIn {
+    animation: colIn 1s forwards;
+  }
+  .colOut {
+    animation: colOut 1s forwards;
+  }
+
+  @keyframes colIn {
+    from {
+      top: 100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+  @keyframes colOut {
+    from {
+      top: 0;
+    }
+    to {
+      top: 100%;
+    }
+  }
+
+  /*************** */
   .film-world-icon {
     width: 15px;
   }
@@ -835,37 +1092,16 @@ footer li {
     min-height: 40vh;
   }
 
+  /* buy ticket css */
   #buy-ticket {
-    min-height: unset;
-    width: unset;
+    display: none;
   }
-  #buy-ticket h1 {
-    font-size: 15px;
-    padding: 5px !important;
-    margin: 0;
-  }
-  #ct-cinema select {
-    margin-bottom: 5px;
-    padding: 1px;
-  }
-  #ct-film select {
-    margin-bottom: 5px;
-    padding: 1px;
+  #buy-ticket-mobile {
+    display: block;
   }
 
-  #buy-ticket .tab-footer {
-    margin: 0;
-  }
-
-  .by-cinema-content {
-    padding: 10px 10px;
-  }
-  .by-film-content {
-    padding: 10px 10px;
-  }
-
-  .btn-buy-ticket p {
-    font-size: 13px;
+  main.mt-5 {
+    margin-top: 0 !important;
   }
 
   /* promotion */
@@ -875,6 +1111,11 @@ footer li {
 
   /* about */
   #about .row {
+    margin: unset;
+  }
+
+  /**/
+  #content-current-film .row {
     margin: unset;
   }
 

@@ -114,3 +114,46 @@ tabUpcommingFilm.addEventListener("click", function (e) {
   contentCurrentFilm.style.display = "none";
   contentUpcommingFilm.style.display = "block";
 });
+
+/*  nav mobile handle */
+
+$(".hamburger").click(function () {
+  $(this).toggleClass("is-active");
+});
+
+const hambuger = $(".hamburger");
+const navMobile = $("#nav-mobile");
+const dongchay = $(".dongchay");
+const colMobile = $(".nav-mobile-tab-content .col");
+const nhan = $(".nhan");
+hambuger.click(() => {
+  if (navMobile.hasClass("navMobileGoesIn")) {
+    setTimeout(() => {
+      navMobile.removeClass("navMobileGoesIn").removeClass("d-flex");
+      navMobile.addClass("navMobileGoesOut").addClass("d-flex");
+    }, 1300);
+
+    setTimeout(() => {
+      dongchay.removeClass("d-block").removeClass("dongChayChay");
+      dongchay.addClass("d-block").addClass("dongChayBienMat");
+    }, 500);
+
+    // lặn xuống trước, dòng chảy biến mất sau, nhãn lặn xuống luôn
+    colMobile.removeClass("colIn").addClass("colOut");
+    nhan.removeClass("colIn").addClass("colOut");
+  } else if (navMobile.hasClass("navMobileGoesOut") || navMobile.hasClass("")) {
+    navMobile.removeClass("navMobileGoesOut").removeClass("d-flex");
+    navMobile.addClass("navMobileGoesIn").addClass("d-flex");
+
+    // khi nav mới vào - dòng chảy chảy ra trước rồi tab ra sau
+    setTimeout(() => {
+      dongchay.removeClass("dongChayBienMat");
+      dongchay.addClass("d-block").addClass("dongChayChay");
+      nhan.removeClass("colOut").addClass("colIn");
+    }, 1000);
+
+    setTimeout(() => {
+      colMobile.removeClass("colOut").addClass("colIn");
+    }, 2000);
+  }
+});
