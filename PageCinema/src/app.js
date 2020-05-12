@@ -31,9 +31,15 @@ app.get("/film", (req, res) => {
 });
 
 app.get("/camera", (req, res) => {
-  res.send("Page not found");
+  res.sendFile(path.join(__dirname, "../public/page", "404.html"));
 });
 
+app.get("/promotion", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/page", "404.html"));
+});
+app.get("/member", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/page", "404.html"));
+});
 app.get("*", (req, res) => {
   res.end("Page not found");
 });
