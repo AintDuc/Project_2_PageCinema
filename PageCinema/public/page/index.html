@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <link rel="icon" href="/img/home-icon.png" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -25,6 +25,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
     />
     <!-- css main page -->
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
@@ -47,21 +52,26 @@
         <div class="nav-mobile-tab">
           <div class="cha-nhan">
             <div class="nhan">Nhãn</div>
+            <div class="muave">Mua vé</div>
+            <div class="dongchay"></div>
           </div>
-          <div class="dongchay"></div>
         </div>
         <div class="nav-mobile-tab-content">
           <div class="row">
-            <div class="col">Thế giới phim</div>
-            <div class="col">Góc điện ảnh</div>
+            <div class="col-6 nhan">Thế giới phim</div>
+            <div class="col-6 muave">23/05/2020</div>
+            <div class="col-6 nhan">Góc điện ảnh</div>
+            <div class="col-6 muave">25/05/2020</div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-6 nhan">
               Khuyến mãi
             </div>
-            <div class="col">
+            <div class="col-6 muave">27/05/2020</div>
+            <div class="col-6 nhan">
               Thành viên
             </div>
+            <div class="col-6 muave">29/05/2020</div>
           </div>
         </div>
       </div>
@@ -81,7 +91,7 @@
               <img src="./../img/home-icon.png" />
             </div>
             <div class="film-world-content">
-              <a href="/world-film">
+              <a href="/film">
                 <span><i class="fas fa-camera-retro"></i></span> Thế giới
                 phim</a
               >
@@ -170,15 +180,15 @@
             >
               <select name="theaters" id="" value="">
                 <option value="1" selected disabled>Chọn rạp</option>
-                <option value="4">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="4">Rạp 1</option>
+                <option value="2">Rạp 2</option>
+                <option value="3">Rạp 3</option>
               </select>
               <select name="theaters" id="">
                 <option value="22" selected disabled>chọn ngày</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="1">29/05/2020</option>
+                <option value="2">31/05/2020</option>
+                <option value="3">1/06/2020</option>
               </select>
               <select name="theaters" id="">
                 <option value="22" selected disabled>chọn suất</option>
@@ -259,7 +269,7 @@
       <!-- about -->
       <section id="about">
         <div class="row p-3">
-          <div class="col-12 col-xl-4 col-lg-4">
+          <div class="col-12 col-md-6 col-xl-4 col-lg-4">
             <div class="box" id="ab-time">
               <div
                 class="box-header d-flex justify-content-center align-items-center flex-column p-3"
@@ -282,7 +292,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-xl-4 col-lg-4">
+          <div class="col-12 col-md-6 col-xl-4 col-lg-4">
             <div class="box" id="ab-price">
               <div
                 class="box-header d-flex justify-content-center align-items-center flex-column p-3"
@@ -305,7 +315,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-xl-4 col-lg-4">
+          <div class="col-12 col-md-12 col-xl-4 col-lg-4">
             <div class="box" id="ab-quality">
               <div
                 class="box-header d-flex justify-content-center align-items-center flex-column p-3"
@@ -344,7 +354,7 @@
         <!-- phim đang chiếu -->
         <div id="content-current-film">
           <div class="row">
-            <div class="col-6 col-xl-3 col-lg-3">
+            <div class="col-6 col-md-3 col-xl-3 col-lg-3">
               <div class="box">
                 <img src="../img/1.jpg" alt="" />
                 <div class="box-footer">
@@ -352,7 +362,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-xl-3 col-lg-3">
+            <div class="col-6 col-md-3 col-xl-3 col-lg-3">
               <div class="box">
                 <img src="../img/2.jpg" alt="" />
                 <div class="box-footer">
@@ -360,7 +370,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-xl-3 col-lg-3">
+            <div class="col-6 col-md-3 col-xl-3 col-lg-3">
               <div class="box">
                 <img src="../img/3.jpg" alt="" />
                 <div class="box-footer">
@@ -368,7 +378,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-xl-3 col-lg-3">
+            <div class="col-6 col-md-3 col-xl-3 col-lg-3">
               <div class="box">
                 <img src="../img/4.jpg" alt="" />
                 <div class="box-footer">
@@ -378,7 +388,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-6 col-xl-3 col-lg-3">
+            <div class="col-6 col-md-3 col-xl-3 col-lg-3">
               <div class="box">
                 <img src="../img/5.jpg" alt="" />
                 <div class="box-footer">
@@ -386,7 +396,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-xl-3 col-lg-3">
+            <div class="col-6 col-md-3 col-xl-3 col-lg-3">
               <div class="box">
                 <img src="../img/6.jpg" alt="" />
                 <div class="box-footer">
@@ -394,7 +404,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-xl-3 col-lg-3">
+            <div class="col-6 col-md-3 col-xl-3 col-lg-3">
               <div class="box">
                 <img src="../img/7.jpg" alt="" />
                 <div class="box-footer">
@@ -402,7 +412,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-xl-3 col-lg-3">
+            <div class="col-6 col-md-3 col-xl-3 col-lg-3">
               <div class="box">
                 <img src="../img/8.jpg" alt="" />
                 <div class="box-footer">
@@ -415,7 +425,7 @@
         <!-- phim sắp chiếu -->
         <div id="content-upcoming-film">
           <div class="row">
-            <div class="col-6 col-xl-3">
+            <div class="col-6 col-md-3 col-xl-3">
               <div class="box">
                 <img src="../img/9.jpg" alt="" />
                 <div class="box-footer">
@@ -423,7 +433,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-xl-3">
+            <div class="col-6 col-md-3 col-xl-3">
               <div class="box">
                 <img src="../img/10.jpg" alt="" />
                 <div class="box-footer">
@@ -439,7 +449,7 @@
       <section id="comment-and-new">
         <div class="row">
           <!-- bình luận -->
-          <div class="col-12 col-xl-6 col-lg-6">
+          <div class="col-12 col-md-12 col-xl-6 col-lg-6">
             <div class="comment-header">
               <h3>Góc bình luận</h3>
             </div>
@@ -519,7 +529,7 @@
             </div>
           </div>
           <!-- tin tức -->
-          <div class="col-12 col-xl-6 col-lg-6">
+          <div class="col-12 col-md-12 col-xl-6 col-lg-6">
             <div class="new-header">
               <h3>Điện ảnh</h3>
             </div>
@@ -601,7 +611,7 @@
     <footer>
       <div class="box">
         <div class="row">
-          <div class="col-6 col-xl-3 col-lg-3">
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-lg-3">
             <div class="box">
               <div class="box-header">
                 Giới thiệu
@@ -628,7 +638,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-xl-3 col-lg-3">
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-lg-3">
             <div class="box">
               <div class="box-header">
                 Góc điện ảnh
@@ -653,7 +663,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-xl-3 col-lg-3">
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-lg-3">
             <div class="box">
               <div class="box-header">Hỗ trợ</div>
               <div class="box-content">
@@ -666,7 +676,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-xl-3 col-lg-3 ft-last-col">
+          <div class="col-12 col-sm-6 col-md-12 col-xl-3 col-lg-3 ft-last-col">
             <div class="box">
               <div class="row">
                 <div class="col">

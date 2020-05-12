@@ -2,10 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Balsamiq Sans", cursive, sans-serif;
 }
 /* style scrollbar */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px lightcyan;
@@ -82,12 +83,10 @@ nav ul {
   margin-bottom: 0;
 }
 
-a {
-  color: #fff;
-}
 nav a {
   position: relative;
   text-decoration: none;
+  color: #fff;
 }
 
 nav a:hover {
@@ -141,6 +140,73 @@ nav li {
   font-weight: 500;
 }
 
+/* animation */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* nav mobile handle */
+#nav-mobile {
+  display: none;
+}
+
+.navMobileGoesIn {
+  animation: navMobileGoesIn 1s forwards;
+}
+.navMobileGoesOut {
+  animation: navMobileGoesOut 1s forwards;
+}
+
+.dongchay {
+  display: none;
+}
+.dongChayChay {
+  animation: dongChayChay 1s forwards;
+}
+
+.dongChayBienMat {
+  animation: dongChayBienMat 1s forwards;
+}
+@keyframes navMobileGoesIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes navMobileGoesOut {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes dongChayChay {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes dongChayBienMat {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
 /* film world */
 
 .film-world-icon {
@@ -430,7 +496,7 @@ li:hover .sub-menu {
 }
 
 #action {
-  color: red;
+  color: rgb(0, 132, 255);
 }
 /* text-ellipsis */
 /* #text-ellipsis {
@@ -536,7 +602,6 @@ li:hover .sub-menu {
 }
 
 /* footer */
-/* footer */
 footer > .box:first-child {
   box-shadow: -1px 0px 20px 15px #fff;
   background-color: black;
@@ -550,6 +615,7 @@ footer .box {
   box-shadow: initial;
   padding: 10px 30px;
   background-color: transparent;
+  margin-bottom: 0;
 }
 
 footer .box .box-header {
@@ -560,6 +626,7 @@ footer .box .box-header {
 }
 footer .box-content ul {
   padding: 10px 15px;
+  margin: 0;
 }
 footer .box-content li {
   text-align: start;
@@ -588,11 +655,1181 @@ footer .box-content li:hover {
   display: inline;
 }
 
-footer .row {
-  margin-bottom: 0;
+footer li {
+  text-transform: uppercase;
 }
-footer .box {
-  margin-bottom: 0;
+
+/* animation */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* nav mobile handle */
+#nav-mobile {
+  display: none;
+}
+
+.navMobileGoesIn {
+  animation: navMobileGoesIn 1s forwards;
+}
+.navMobileGoesOut {
+  animation: navMobileGoesOut 1s forwards;
+}
+
+.dongchay {
+  display: none;
+}
+.dongChayChay {
+  animation: dongChayChay 1s forwards;
+}
+
+.dongChayBienMat {
+  animation: dongChayBienMat 1s forwards;
+}
+@keyframes navMobileGoesIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes navMobileGoesOut {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes dongChayChay {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes dongChayBienMat {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+/* moblie responsive */
+/* 0 - 576 */
+@media only screen and (max-width: 576px) {
+  nav {
+    display: none;
+  }
+
+  header {
+    margin-bottom: 100px;
+  }
+  /* nav mobile handle */
+
+  /* hambuger */
+
+  .wrapper {
+    z-index: 15;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+  }
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    content: "";
+    display: block;
+  }
+  .hamburger-inner::before {
+    top: -10px;
+  }
+  .hamburger-inner::after {
+    bottom: -10px;
+  }
+
+  /*
+   * Squeeze
+   */
+  .hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.1s 0.14s ease, opacity 0.1s ease;
+  }
+  .hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.1s 0.14s ease,
+      transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease, opacity 0.1s 0.14s ease;
+  }
+  .hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease,
+      transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  /* nav mobile handle */
+  #nav-mobile {
+    position: fixed;
+    z-index: 14;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* thằng này chuyển động 1 tý */
+  .nav-mobile-tab {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    color: #fff;
+    align-items: center;
+    padding: 40px;
+    font-size: 35px;
+  }
+  .dongchay {
+    right: 0;
+    position: absolute;
+    top: 90%;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #fff;
+  }
+
+  .nav-mobile-tab-content {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    color: #fff;
+
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    padding-top: 0;
+  }
+  /* để nhãn có animation giống content thì phải có tính chất giống content */
+  .cha-nhan {
+    margin: unset;
+    width: 100%;
+    height: 37px;
+    position: relative;
+    overflow: hidden;
+  }
+  .nhan {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+  }
+  .nav-mobile-tab-content .row {
+    margin: unset;
+    width: 100%;
+    height: 37px;
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-mobile-tab-content .col-6 {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .nav-mobile-tab-content .row .col-6:nth-child(3) {
+    left: 50%;
+  }
+  .nav-mobile-tab-content .row .col-6:nth-child(4) {
+    left: 50%;
+  }
+
+  .colIn {
+    animation: colIn 1s forwards;
+  }
+  .colOut {
+    animation: colOut 1s forwards;
+  }
+
+  @keyframes colIn {
+    from {
+      top: 100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+  @keyframes colOut {
+    from {
+      top: 0;
+    }
+    to {
+      top: 100%;
+    }
+  }
+
+  .swipeUp1 {
+    animation: swipeUp1 1s forwards;
+  }
+  .swipeDown1 {
+    animation: swipeDown1 1s forwards;
+  }
+
+  .swipeUp2 {
+    animation: swipeUp2 1s forwards;
+  }
+  .swipeDown2 {
+    animation: swipeDown2 1s forwards;
+  }
+  /* swipe animation */
+  @keyframes swipeUp1 {
+    from {
+      top: 0;
+    }
+    to {
+      top: -100%;
+    }
+  }
+  @keyframes swipeDown1 {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes swipeUp2 {
+    from {
+      top: 100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes swipeDown2 {
+    from {
+      top: 0;
+    }
+    to {
+      top: 100%;
+    }
+  }
+
+  .muave {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  /*************** */
+  .film-world-icon {
+    width: 15px;
+  }
+  nav li a {
+    font-size: 9px;
+  }
+  .logo-link {
+    font-size: 12px;
+  }
+  .logo-world {
+    font-size: 12px;
+  }
+
+  .slider {
+    min-height: 40vh;
+  }
+
+  /* buy ticket css */
+  #buy-ticket {
+    display: none;
+  }
+  #buy-ticket-mobile {
+    display: block;
+  }
+
+  /* main */
+
+  /* promotion */
+  #promotion .row {
+    margin: unset;
+  }
+
+  /* about */
+  #about .row {
+    margin: unset;
+  }
+
+  /**/
+  #content-current-film .row {
+    margin: unset;
+  }
+
+  /* film css*/
+  .box-title h3 {
+    font-size: 20px;
+  }
+  .seat-header {
+    padding: 16px;
+  }
+
+  #choose-seat-content {
+    font-size: 22px;
+  }
+  /*********************/
+  /* footer */
+
+  footer {
+    box-shadow: 3px -15px 20px 0px #fff;
+    overflow: hidden;
+  }
+  footer .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .box .box-header {
+    font-size: 15px;
+  }
+  .ft-last-col {
+    padding: 10px 30px;
+    text-align: center;
+  }
+}
+/* 576 - 768 */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  header {
+    margin-bottom: 100px;
+  }
+  /* nav mobile handle */
+
+  /* hambuger */
+
+  .wrapper {
+    z-index: 15;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+  }
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    content: "";
+    display: block;
+  }
+  .hamburger-inner::before {
+    top: -10px;
+  }
+  .hamburger-inner::after {
+    bottom: -10px;
+  }
+
+  /*
+   * Squeeze
+   */
+  .hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.1s 0.14s ease, opacity 0.1s ease;
+  }
+  .hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.1s 0.14s ease,
+      transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease, opacity 0.1s 0.14s ease;
+  }
+  .hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease,
+      transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  /* nav mobile handle */
+  #nav-mobile {
+    position: fixed;
+    z-index: 14;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* thằng này chuyển động 1 tý */
+  .nav-mobile-tab {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    color: #fff;
+    align-items: center;
+    padding: 40px;
+    font-size: 35px;
+  }
+  .dongchay {
+    right: 0;
+    position: absolute;
+    top: 90%;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #fff;
+  }
+
+  .nav-mobile-tab-content {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    color: #fff;
+
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    padding-top: 0;
+  }
+  /* để nhãn có animation giống content thì phải có tính chất giống content */
+  .cha-nhan {
+    margin: unset;
+    width: 100%;
+    height: 37px;
+    position: relative;
+    overflow: hidden;
+  }
+  .nhan {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+  }
+  .nav-mobile-tab-content .row {
+    margin: unset;
+    width: 100%;
+    height: 37px;
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-mobile-tab-content .col-6 {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .nav-mobile-tab-content .row .col-6:nth-child(3) {
+    left: 50%;
+  }
+  .nav-mobile-tab-content .row .col-6:nth-child(4) {
+    left: 50%;
+  }
+
+  .colIn {
+    animation: colIn 1s forwards;
+  }
+  .colOut {
+    animation: colOut 1s forwards;
+  }
+
+  @keyframes colIn {
+    from {
+      top: 100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+  @keyframes colOut {
+    from {
+      top: 0;
+    }
+    to {
+      top: 100%;
+    }
+  }
+
+  .swipeUp1 {
+    animation: swipeUp1 1s forwards;
+  }
+  .swipeDown1 {
+    animation: swipeDown1 1s forwards;
+  }
+
+  .swipeUp2 {
+    animation: swipeUp2 1s forwards;
+  }
+  .swipeDown2 {
+    animation: swipeDown2 1s forwards;
+  }
+  /* swipe animation */
+  @keyframes swipeUp1 {
+    from {
+      top: 0;
+    }
+    to {
+      top: -100%;
+    }
+  }
+  @keyframes swipeDown1 {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes swipeUp2 {
+    from {
+      top: 100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes swipeDown2 {
+    from {
+      top: 0;
+    }
+    to {
+      top: 100%;
+    }
+  }
+
+  .muave {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  /*************** */
+  .film-world-icon {
+    width: 15px;
+  }
+  nav li a {
+    font-size: 9px;
+  }
+  .logo-link {
+    font-size: 12px;
+  }
+  .logo-world {
+    font-size: 12px;
+  }
+
+  .slider {
+    min-height: 40vh;
+  }
+
+  /* buy ticket css */
+  #buy-ticket {
+    display: none;
+  }
+  #buy-ticket-mobile {
+    display: block;
+  }
+
+  /* main */
+
+  /* promotion */
+  #promotion .row {
+    margin: unset;
+  }
+
+  /* about */
+  #about .row {
+    margin: unset;
+  }
+
+  /**/
+  #content-current-film .row {
+    margin: unset;
+  }
+
+  /* film css*/
+  .box-title h3 {
+    font-size: 20px;
+  }
+  .seat-header {
+    padding: 16px;
+  }
+
+  #choose-seat-content {
+    font-size: 22px;
+  }
+  /*********************/
+  /* footer */
+
+  footer {
+    box-shadow: 3px -15px 20px 0px #fff;
+    overflow: hidden;
+  }
+  footer .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .box .box-header {
+    font-size: 15px;
+  }
+  .ft-last-col {
+    padding: 10px 30px;
+    text-align: center;
+  }
+}
+
+/* 768 - 992 */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  nav {
+    display: none;
+  }
+
+  header {
+    margin-bottom: 100px;
+  }
+  /* nav mobile handle */
+
+  /* hambuger */
+
+  .wrapper {
+    z-index: 15;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+  }
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    content: "";
+    display: block;
+  }
+  .hamburger-inner::before {
+    top: -10px;
+  }
+  .hamburger-inner::after {
+    bottom: -10px;
+  }
+
+  /*
+   * Squeeze
+   */
+  .hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.1s 0.14s ease, opacity 0.1s ease;
+  }
+  .hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.1s 0.14s ease,
+      transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease, opacity 0.1s 0.14s ease;
+  }
+  .hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease,
+      transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  /* nav mobile handle */
+  #nav-mobile {
+    position: fixed;
+    z-index: 14;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* thằng này chuyển động 1 tý */
+  .nav-mobile-tab {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    color: #fff;
+    align-items: center;
+    padding: 40px;
+    font-size: 35px;
+  }
+  .dongchay {
+    right: 0;
+    position: absolute;
+    top: 90%;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #fff;
+  }
+
+  .nav-mobile-tab-content {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    color: #fff;
+
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    padding-top: 0;
+  }
+  /* để nhãn có animation giống content thì phải có tính chất giống content */
+  .cha-nhan {
+    margin: unset;
+    width: 100%;
+    height: 37px;
+    position: relative;
+    overflow: hidden;
+  }
+  .nhan {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+  }
+  .nav-mobile-tab-content .row {
+    margin: unset;
+    width: 100%;
+    height: 37px;
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-mobile-tab-content .col-6 {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .nav-mobile-tab-content .row .col-6:nth-child(3) {
+    left: 50%;
+  }
+  .nav-mobile-tab-content .row .col-6:nth-child(4) {
+    left: 50%;
+  }
+
+  .colIn {
+    animation: colIn 1s forwards;
+  }
+  .colOut {
+    animation: colOut 1s forwards;
+  }
+
+  @keyframes colIn {
+    from {
+      top: 100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+  @keyframes colOut {
+    from {
+      top: 0;
+    }
+    to {
+      top: 100%;
+    }
+  }
+
+  .swipeUp1 {
+    animation: swipeUp1 1s forwards;
+  }
+  .swipeDown1 {
+    animation: swipeDown1 1s forwards;
+  }
+
+  .swipeUp2 {
+    animation: swipeUp2 1s forwards;
+  }
+  .swipeDown2 {
+    animation: swipeDown2 1s forwards;
+  }
+  /* swipe animation */
+  @keyframes swipeUp1 {
+    from {
+      top: 0;
+    }
+    to {
+      top: -100%;
+    }
+  }
+  @keyframes swipeDown1 {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes swipeUp2 {
+    from {
+      top: 100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes swipeDown2 {
+    from {
+      top: 0;
+    }
+    to {
+      top: 100%;
+    }
+  }
+
+  .muave {
+    font-size: 25px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  /*************** */
+  .film-world-icon {
+    width: 15px;
+  }
+  nav li a {
+    font-size: 9px;
+  }
+  .logo-link {
+    font-size: 12px;
+  }
+  .logo-world {
+    font-size: 12px;
+  }
+
+  .slider {
+    min-height: 40vh;
+  }
+
+  /* buy ticket css */
+  #buy-ticket {
+    display: none;
+  }
+  #buy-ticket-mobile {
+    display: block;
+  }
+
+  /* main */
+
+  /* promotion */
+  #promotion .row {
+    margin: unset;
+  }
+
+  /* about */
+  #about .row {
+    margin: unset;
+  }
+
+  /**/
+  #content-current-film .row {
+    margin: unset;
+  }
+
+  /* film css*/
+  .box-title h3 {
+    font-size: 20px;
+  }
+  .seat-header {
+    padding: 16px;
+  }
+
+  #choose-seat-content {
+    font-size: 22px;
+  }
+  /*********************/
+  /* footer */
+
+  footer {
+    box-shadow: 3px -15px 20px 0px #fff;
+    overflow: hidden;
+  }
+  footer .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .box .box-header {
+    font-size: 15px;
+  }
+  .ft-last-col {
+    padding: 10px 30px;
+    text-align: center;
+  }
+}
+/* 992 - 1200 */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* nav */
+  nav li {
+    padding: 10px;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  .logo-link {
+    font-size: 25px;
+  }
+  .logo-world {
+    font-size: 25px;
+  }
+
+  .film-world-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .film-world-content::after {
+    z-index: 11;
+  }
+  nav > ul > li:first-child {
+    padding: 0;
+  }
+
+  .slider {
+    min-height: 83vh;
+  }
+
+  /* main */
+  main.mt-5 {
+    margin-top: 0 !important;
+  }
+
+  /* about */
+  #about h4 {
+    text-align: center;
+  }
+
+  /* footer */
+  footer .box .box-header {
+    font-size: 20px;
+  }
+  footer ul {
+    margin: 0;
+  }
+  footer .box-content li {
+    font-size: 15px;
+  }
+}
+
+/* >1200 */
+@media only screen and (min-width: 1200px) {
+  ul li {
+    padding: 15px;
+  }
 }
 
 /* mobile responsive */
@@ -606,5 +1843,11 @@ footer .box {
   #address .btn {
     padding: 10px 3px;
     font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #nav-mobile {
+    display: none !important;
   }
 }

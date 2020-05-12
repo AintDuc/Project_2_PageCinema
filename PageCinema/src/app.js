@@ -30,6 +30,10 @@ app.get("/film", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/page", "worldFilm.html"));
 });
 
+app.get("/camera", (req, res) => {
+  res.send("Page not found");
+});
+
 app.get("*", (req, res) => {
   res.end("Page not found");
 });

@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <link rel="icon" href="/img/home-icon.png" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -20,6 +20,12 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
     />
     <!-- Font awesome -->
     <link
@@ -35,6 +41,44 @@
   </head>
   <body>
     <header>
+      <!-- hamberger  -->
+      <div class="wrapper">
+        <div class="hamburger hamburger--squeeze js-hamburger">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav mobile  -->
+      <div id="nav-mobile">
+        <div class="nav-mobile-tab">
+          <div class="cha-nhan">
+            <div class="nhan">Nhãn</div>
+            <div class="muave">Mua vé</div>
+            <div class="dongchay"></div>
+          </div>
+        </div>
+        <div class="nav-mobile-tab-content">
+          <div class="row">
+            <div class="col-6 nhan">Thế giới phim</div>
+            <div class="col-6 muave">23/05/2020</div>
+            <div class="col-6 nhan">Góc điện ảnh</div>
+            <div class="col-6 muave">25/05/2020</div>
+          </div>
+          <div class="row">
+            <div class="col-6 nhan">
+              Khuyến mãi
+            </div>
+            <div class="col-6 muave">27/05/2020</div>
+            <div class="col-6 nhan">
+              Thành viên
+            </div>
+            <div class="col-6 muave">29/05/2020</div>
+          </div>
+        </div>
+      </div>
+      <!-- nav -->
       <nav>
         <ul class="d-flex">
           <li>
@@ -50,7 +94,7 @@
               <img src="./../img/home-icon.png" />
             </div>
             <div class="film-world-content">
-              <a href="/world-film">
+              <a href="/film">
                 <span><i class="fas fa-camera-retro"></i></span> Thế giới
                 phim</a
               >
@@ -70,7 +114,7 @@
           </li>
           <li class="cinema-angle">
             <div class="cinema-angle-content">
-              <a href=""
+              <a href="/camera"
                 ><span><i class="far fa-file-image"></i></span> Góc điện ảnh</a
               >
             </div>
@@ -88,7 +132,7 @@
             </ul>
           </li>
           <li>
-            <a href="/page/promotion.html">
+            <a href="#">
               <span>
                 <i class="fas fa-volume-up"></i>
               </span>
@@ -122,21 +166,21 @@
       <div class="container">
         <div class="row">
           <!-- left -->
-          <div class="col-8" id="left">
+          <div class="col-12 col-lg-8" id="left">
             <div class="box">
               <!-- phần address -->
               <article id="address">
                 <div class="box box-shadow rounded p-3">
                   <div class="row">
                     <div
-                      class="col-3 d-flex align-items-center justify-content-center"
+                      class="col-4 col-lg-4 d-flex align-items-center justify-content-center"
                       id="address-img"
                     >
                       <div class="box mb-0">
                         <img src="../img/1.jpg" alt="" class="rounded" />
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col-8 col-lg-4">
                       <div class="box">
                         <div class="box-title d-flex">
                           <h3 class="">Cinestar Ly Chinh Thang</h3>
@@ -166,11 +210,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-4">
                       <div
                         class="box d-flex justify-content-center align-items-center mb-0 h-100 w-100"
                       >
-                        <button class="btn btn-primary w-100">
+                        <button class="btn btn-primary">
                           Booking Seat
                         </button>
                       </div>
@@ -287,7 +331,7 @@
           </div>
           <!-- right -->
           <!-- total money -->
-          <div class="col" id="right">
+          <div class="col-12 col-lg-4" id="right">
             <div class="box box-shadow rounded" id="sell-ticket">
               <div class="box-header p-3">
                 <h1>header</h1>
@@ -311,7 +355,7 @@
     <footer>
       <div class="box">
         <div class="row">
-          <div class="col-6 col-xl-3 col-lg-3">
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-lg-3">
             <div class="box">
               <div class="box-header">
                 Giới thiệu
@@ -338,7 +382,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-xl-3 col-lg-3">
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-lg-3">
             <div class="box">
               <div class="box-header">
                 Góc điện ảnh
@@ -363,7 +407,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-xl-3 col-lg-3">
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-lg-3">
             <div class="box">
               <div class="box-header">Hỗ trợ</div>
               <div class="box-content">
@@ -376,7 +420,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-xl-3 col-lg-3 ft-last-col">
+          <div class="col-12 col-sm-6 col-md-12 col-xl-3 col-lg-3 ft-last-col">
             <div class="box">
               <div class="row">
                 <div class="col">
@@ -415,6 +459,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
