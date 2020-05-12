@@ -48,6 +48,10 @@ body {
   background-color: lightcoral;
 }
 
+select {
+  text-transform: capitalize;
+}
+
 /* nav mobile */
 .wrapper {
   display: none;
