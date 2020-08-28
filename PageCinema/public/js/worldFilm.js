@@ -40,7 +40,7 @@ var totalSeats = 80;
 // func render seat from api
 const renderSeats = async () => {
   const devURL = "http://localhost:5000/api/seats";
-  const proURL = "https://backend-journey.herokuapp.com/api/seats";
+  const proURL = "https://train-pagecinema.herokuapp.com/api/seats";
   await $.ajax({
     url: proURL,
   }).done((seats) => {
